@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kramer</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/myStyle.css" />
+    <link rel="shorcut icon" href="./assets/ICON.ico">
+  </head>
+
+  <body>
+    <div class="basic container text-center">
+      <h1 class="title">
+        Chiziqli tenglamalar sistemasini Kramer usuli bilan yechish
+      </h1>
+
+      <h3 class="warning-text text-primary">
+        Sistemaga tartib bo'yicha barcha koeffitsientlarini kiriting va tugmani bosing.
+      </h3>
+
+      <h5 class="text-3 text-danger">
+            <b> ESLATMA: </b>Koeffitsientlar butun son bo'lishi kerak ( Kasr son qabul qilinmaydi, manfiy son bo'lishi mumkin ... )
+      </h5>
+
+      <div class="col-md-1">
+        <img class="brace" src="./assets/curlyBrace.png" alt="">
+      </div>
+      <div class="col-md-7">
+        <!-- birinchi tenglama -->
+        <div class="equation equation-1">
+          <label for="a1">
+            <input type="number" id="a1" placeholder="a1" /> x +
+          </label>
+          <label for="b1">
+            <input type="number" id="b1" placeholder="b1" /> y +
+          </label>
+          <label for="c1">
+            <input type="number" id="c1" placeholder="c1" /> z =
+          </label>
+          <label for="d1">
+            <input type="number" id="d1" placeholder="d1" />
+          </label>
+        </div>
+
+        <br />
+        <!-- ikkinchi tenglama -->
+        <div class="equation equation-2">
+          <label for="a2">
+            <input type="number" id="a2" placeholder="a2" /> x +
+          </label>
+          <label for="b2">
+            <input type="number" id="b2" placeholder="b2" /> y +
+          </label>
+          <label for="c2">
+            <input type="number" id="c2" placeholder="c2" /> z =
+          </label>
+          <label for="d2">
+            <input type="number" id="d2" placeholder="d2" />
+          </label>
+        </div>
+
+        <br />
+        <!-- uchinchi tenglama -->
+        <div class="equation equation-3">
+          <label for="a3">
+            <input type="number" id="a3" placeholder="a3" /> x +
+          </label>
+          <label for="b3">
+            <input type="number" id="b3" placeholder="b3" /> y +
+          </label>
+          <label for="c3">
+            <input type="number" id="c3" placeholder="c3" /> z =
+          </label>
+          <label for="d3">
+            <input type="number" id="d3" placeholder="d3" />
+          </label>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <button type="submit" onclick="calculate()" class="btn btn-success">
+          Natijani ko'rish
+        </button>
+        <br /><br />
+
+        <h2 id="result-show">
+          Natija: <br />
+          <span id="natija"></span>
+        </h2>
+      </div>
+      <div class="clr"></div>
+      <br><br>
+
+      <div class="empty-set">
+        <div class="col-md-6">
+          <p>Geometrik rasm namunasi:</p>
+          <img class="geometricImg" src="./assets/emptySet.jpg" alt="emptySet" />
+        </div>
+        <div class="col-md-6">
+          <p>Hayotiy rasm namunasi:</p>
+          <img class="realLifeImg" src="./assets/emptySetInLife2.jpg" alt="">
+        </div>
+      </div>
+
+      <div class="one-solution">
+        <div class="col-md-6">
+          <p>Geometrik rasm namunasi:</p>
+          <img class="geometricImg" src="./assets/oneSolution.jpg" alt="emptySet" />
+        </div>
+        <div class="col-md-6">
+          <p>Hayotiy rasm namunasi:</p>
+          <img class="realLifeImg" src="./assets/crossroad.png" alt="">
+        </div>
+      </div>
+      
+      <div class="infinite-solutions">
+        <div class="col-md-6">
+          <p>Geometrik rasm namunasi:</p>
+          <img class="geometricImg" src="./assets/infiniteSolutions.jpg" alt="emptySet" />
+        </div>
+        <div class="col-md-6">
+          <p>Hayotiy rasm namunasi:</p>
+          <img class="realLifeImg" src="./assets/infiniteSolutionsInLife.jpg" alt="">
+        </div>
+      </div>
+
+      <a href="https://t.me/Ismoil_Mirabdullaev">Contact</a>
+    </div>
+
+    <script src="js/jQuery.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="./js/myJS.js"></script>
+  </body>
+</html>
